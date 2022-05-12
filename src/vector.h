@@ -76,8 +76,6 @@ void* VECTOR_GET(Vector *v, int index) {
 void VECTOR_DELETE(Vector *v, int index) {
     if (index < 0 || index > v->current)
         return;
-    
-    void* p = v->items[index];
 
     v->items[index] = NULL;
 
@@ -91,8 +89,6 @@ void VECTOR_DELETE(Vector *v, int index) {
 
     if (v->current > 0 && v->current <= (v->limit / 2))
         VECTOR_RESIZE(v, v->limit - (v->current / 2));
-
-    fprintf(stdout, "Usunieto element %d z miejsca %d\n", (int*)p, index);
 }
 
 #endif
