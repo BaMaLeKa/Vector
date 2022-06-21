@@ -3,7 +3,6 @@
     = Autor: Bartosz Kania
     = Opis: Prosty Vector do użytku własnego, może kiedyś go poprawie, 
     = ale zadowala mnie jego obecna forma
-    = Inspirowany Vectorem z https://aticleworld.com/implement-vector-in-c/
 */
 #ifndef VECTOR_H
 #define VECTOR_H
