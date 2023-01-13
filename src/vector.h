@@ -1,7 +1,9 @@
 /*
     = VECTOR
-    = Autor: Bartosz Kania
-    = Opis: Prosty Vector do użytku własnego 
+    = Author: Bartosz Kania
+    = Description: Simple Vector for educational purposes. No stability guaranted!!!
+
+    = TODO: Find out why I can't pushback undefined values directly through the function
 */
 #ifndef VECTOR_H
 #define VECTOR_H
@@ -11,8 +13,8 @@
 #include <string.h>
 #include <assert.h>
 
+// LIMIT = Initial size of vector
 #define LIMIT 10
-
 
 typedef struct Vector{
     void* items;
